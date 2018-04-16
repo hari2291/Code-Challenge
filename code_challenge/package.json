@@ -1,0 +1,11 @@
+{
+  "name": "Table-Application-Code-Challenge",
+  "version": "1.0.0",
+  "description": "An application created to display data from a third party source as a table",
+  "main": "server.js",
+  "author": "Harshith Sharma",
+  "license": "",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

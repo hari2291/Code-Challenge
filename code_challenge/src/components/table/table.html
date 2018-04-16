@@ -1,0 +1,45 @@
+<div class ="container" ng-controller="TableController as vm">
+	<button ng-if="vm.lastSelectedCategory" type="button" class="btn btn-primary resetButton" ng-click="vm.resetCategoryList()">Reset Table</button>
+	<table class="myTable table table-bordered table-striped">
+		<thead>
+		<tr>
+			<td class="stretch">
+				<a href="#" ng-click="vm.sortColumn('userId')">
+					<span>User Id</span>
+					<span class="fa fa-caret-up" ng-class="(vm.lastSelectedCategory == 'userId')?'blueArrow':'greyArrow'"></span>
+					<span class="fa fa-caret-down" ng-class="(vm.lastSelectedCategory == '-userId')?'blueArrow':'greyArrow'"></span>
+				</a>
+			</td>
+			<td class="stretch">
+				<a href="#" ng-click="vm.sortColumn('id')">
+					<span>ID</span>
+					<span class="fa fa-caret-up" ng-class="(vm.lastSelectedCategory == 'id')?'blueArrow':'greyArrow'"></span>
+					<span class="fa fa-caret-down" ng-class="(vm.lastSelectedCategory == '-id')?'blueArrow':'greyArrow'"></span>
+				</a>
+			</td>
+			<td>
+				<a href="#" ng-click="vm.sortColumn('title')">
+					<span>Title</span>
+					<span class="fa fa-caret-up" ng-class="(vm.lastSelectedCategory == 'title')?'blueArrow':'greyArrow'"></span>
+					<span class="fa fa-caret-down" ng-class="(vm.lastSelectedCategory == '-title')?'blueArrow':'greyArrow'"></span>
+				</a>
+			</td>
+			<td>
+				<a href="#" ng-click="vm.sortColumn('body')">
+					<span>Body</span>
+					<span class="fa fa-caret-up" ng-class="(vm.lastSelectedCategory == 'body')?'blueArrow':'greyArrow'"></span>
+					<span class="fa fa-caret-down" ng-class="(vm.lastSelectedCategory == '-body')?'blueArrow':'greyArrow'"></span>
+				</a>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in vm.tableData | orderBy : vm.categoriesToBeSorted">
+			<td class="stretch">{{item.userId}}</td>
+			<td class="stretch">{{item.id}}</td>
+			<td>{{item.title}}</td>
+			<td>{{item.body}}</td>
+		</tr>
+	</tbody>
+	</table>
+</div>

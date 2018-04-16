@@ -1,0 +1,57 @@
+body{
+	padding: 30px;
+}
+
+.greyArrow {
+	color: grey;
+}
+
+td.stretch {
+	width: 14%;
+}
+
+.blueArrow,
+.greyArrow {
+	font-size: 29px;
+}
+
+.resetButton {
+	margin: 30px 0;
+}
+
+thead {
+	font-weight: bold;
+}
+
+thead a {
+	font-weight: bold;
+}
+
+thead a:hover {
+	text-decoration: none;
+}
+
+thead a span{
+	vertical-align: middle;
+}
+
+thead a span.fa-caret-up {
+	margin-left: 18px;
+}
+
+thead a span.fa-caret-down {
+	margin-left: 4px;
+}
+
+.myTable.table{
+	border: 2px solid #a3beda;
+}
+
+.myTable.table tbody tr:nth-of-type(odd) {
+	background-color: #cae4ff;
+}
+
+.table-bordered.myTable td, 
+.table-bordered.myTable th {
+	border: 1px solid #a3beda;
+}
