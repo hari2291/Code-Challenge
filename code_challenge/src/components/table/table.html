@@ -6,29 +6,29 @@
 			<td class="stretch">
 				<a href="#" ng-click="vm.sortColumn('userId')">
 					<span>User Id</span>
-					<span class="fa fa-caret-up" ng-class="(vm.lastSelectedCategory == 'userId')?'blueArrow':'greyArrow'"></span>
-					<span class="fa fa-caret-down" ng-class="(vm.lastSelectedCategory == '-userId')?'blueArrow':'greyArrow'"></span>
+					<span ng-show="vm.lastSelectedCategory == 'userId'" class="fa fa-caret-up arrow"></span>
+					<span ng-show="vm.lastSelectedCategory == '-userId'" class="fa fa-caret-down arrow"></span>
 				</a>
 			</td>
 			<td class="stretch">
 				<a href="#" ng-click="vm.sortColumn('id')">
 					<span>ID</span>
-					<span class="fa fa-caret-up" ng-class="(vm.lastSelectedCategory == 'id')?'blueArrow':'greyArrow'"></span>
-					<span class="fa fa-caret-down" ng-class="(vm.lastSelectedCategory == '-id')?'blueArrow':'greyArrow'"></span>
+					<span ng-show="vm.lastSelectedCategory == 'id'" class="fa fa-caret-up arrow"></span>
+					<span ng-show="vm.lastSelectedCategory == '-id'" class="fa fa-caret-down arrow"></span>
 				</a>
 			</td>
 			<td>
 				<a href="#" ng-click="vm.sortColumn('title')">
 					<span>Title</span>
-					<span class="fa fa-caret-up" ng-class="(vm.lastSelectedCategory == 'title')?'blueArrow':'greyArrow'"></span>
-					<span class="fa fa-caret-down" ng-class="(vm.lastSelectedCategory == '-title')?'blueArrow':'greyArrow'"></span>
+					<span ng-show="vm.lastSelectedCategory == 'title'" class="fa fa-caret-up arrow"></span>
+					<span ng-show="vm.lastSelectedCategory == '-title'" class="fa fa-caret-down arrow"></span>
 				</a>
 			</td>
 			<td>
 				<a href="#" ng-click="vm.sortColumn('body')">
 					<span>Body</span>
-					<span class="fa fa-caret-up" ng-class="(vm.lastSelectedCategory == 'body')?'blueArrow':'greyArrow'"></span>
-					<span class="fa fa-caret-down" ng-class="(vm.lastSelectedCategory == '-body')?'blueArrow':'greyArrow'"></span>
+					<span ng-show="vm.lastSelectedCategory == 'body'" class="fa fa-caret-up arrow"></span>
+					<span ng-show="vm.lastSelectedCategory == '-body'" class="fa fa-caret-down arrow"></span>
 				</a>
 			</td>
 		</tr>
