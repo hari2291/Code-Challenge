@@ -2,17 +2,16 @@ body{
 	padding: 30px;
 }
 
-.greyArrow {
-	color: grey;
-}
-
 td.stretch {
 	width: 14%;
 }
 
-.blueArrow,
-.greyArrow {
+.arrow {
 	font-size: 29px;
+}
+
+td span {
+	color: #007bff;
 }
 
 .resetButton {
@@ -31,16 +30,12 @@ thead a:hover {
 	text-decoration: none;
 }
 
-thead a span{
+thead span{
 	vertical-align: middle;
 }
 
-thead a span.fa-caret-up {
+thead span {
 	margin-left: 18px;
-}
-
-thead a span.fa-caret-down {
-	margin-left: 4px;
 }
 
 .myTable.table{
